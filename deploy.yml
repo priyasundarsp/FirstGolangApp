@@ -15,17 +15,10 @@ spec:
     spec:
       containers:
         - name: azure-go-app
-          image: "<img url>"
-          envFrom:
-            - secretRef:
-                name: az-sp
+          image: "azconfdemoacr01.azurecr.io/golangimages/first-goapp:latest"
           env:
             - name: "PORT"
-              value: "8000"
-          resources:
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
+              value: "3000"
           ports:
             - name: go-app-port
-              containerPort: 8000
+              containerPort: 3000
