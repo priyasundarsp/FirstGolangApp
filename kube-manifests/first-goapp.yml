@@ -22,3 +22,14 @@ spec:
           ports:
             - name: go-app-port
               containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: first-go-app
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 3000
+  selector:
+    app: first-go-app
