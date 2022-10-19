@@ -9,7 +9,7 @@ https://go.dev/doc/install
 ## Clone the repo
 git clone https://github.com/priyasundarsp/FirstGolangApp.git
 
-#Build Binary using below command
+## Build Binary using below command
 ```
 go build .
 ```
