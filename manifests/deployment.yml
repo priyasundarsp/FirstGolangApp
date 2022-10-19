@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: priyasundarspfirstgolangapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: priyasundarspfirstgolangapp
+  template:
+    metadata:
+      labels:
+        app: priyasundarspfirstgolangapp 
+    spec:
+      containers:
+        - name: priyasundarspfirstgolangapp 
+          image: azconfdemoacr.azurecr.io/priyasundarspfirstgolangapp
+          ports:
+          - containerPort: 3000
