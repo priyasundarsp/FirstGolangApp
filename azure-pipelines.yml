@@ -16,7 +16,7 @@ variables:
   containerRegistry: 'azconfdemoacr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'azconfdemoacr089f-auth'
+  imagePullSecret: 'azdevconfacr-service-connection'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
