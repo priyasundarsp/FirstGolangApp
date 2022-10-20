@@ -6,7 +6,7 @@ import (
 )
 
 func homePage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Awesome Golang Application is ready !!!")
+	fmt.Fprintf(w, "Awesome Golang Application is ready to go !!!")
 }
 func sayHello(w http.ResponseWriter, r *http.Request) {
 	username := r.URL.Query().Get("name")
